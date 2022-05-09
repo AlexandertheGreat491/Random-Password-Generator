@@ -30,3 +30,10 @@ function generatePassword(){
     //the minimum count for numbers, lowerCases, upperCases & special Characters
     var minimumCount = 0;
 }
+
+//Empty minimums for numbers, lowerCases, upperCases, & specialCharacters
+
+var minimumNumbers = "";
+var minimumLowerCases = "";
+var minimumUpperCases = "";
+var minimumSpecialCharacters = "";
