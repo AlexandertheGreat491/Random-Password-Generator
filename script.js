@@ -114,7 +114,14 @@ if (
     return;
 }
 // Objects that will store the user input.
-
+var passwordOptions = {
+    lenth: length,
+    hasSpecialCharacters: hasSpecialCharacters,
+    hasNumericCharacters: hasNumericCharacters,
+    hasLowerCasedCharacters: hasLoweredCasedCharacters,
+    hasUpperCasedCharacters: hasUpperCasedCharacters
+};
+return passwordOptions;
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
