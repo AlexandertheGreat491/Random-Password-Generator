@@ -76,6 +76,12 @@ if (length < 8) {
     alert('Password length must be at least 8 characters.');
     return;
 }
+
+// Condition that checks if the password length is less than 128 characters.
+if (length > 128) {
+    alert('Password length must be less than 129 characters.');
+    return;
+}
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
