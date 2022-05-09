@@ -58,7 +58,13 @@ var lowerCasedCharacters = [
     'y',
     'z',
 ];
-
+// Function to that prompts the user to choose password options.
+function getPasswordOptions() {
+    // Length of the password entered by the user.
+    var length = parseInt(
+        prompt('How many characters would you like your password to contain?')
+    );
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
