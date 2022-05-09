@@ -60,7 +60,7 @@ var lowerCasedCharacters = [
 ];
 // Function to that prompts the user to choose password options.
 function getPasswordOptions() {
-    // Length of the password entered by the user.
+    // Prompts user to enter the length of their password.
     var length = parseInt(
         prompt('How many characters would you like your password to contain?')
     );
