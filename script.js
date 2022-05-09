@@ -123,6 +123,13 @@ var passwordOptions = {
 };
 return passwordOptions;
 }
+
+// Function for getting a random element from an array.
+function getRandom(arr) {
+    var randIndex = Math.floor(Math.random() * arr.length);
+    var randElement = arr[randIndex];
+    return randElement;
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
 
