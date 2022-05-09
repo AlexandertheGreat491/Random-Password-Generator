@@ -82,6 +82,22 @@ if (length > 128) {
     alert('Password length must be less than 129 characters.');
     return;
 }
+
+// Variable to store boolean regarding the use of special characters.
+var hasSpecialCharacters = confirm(
+    'Click OK to confirm including special characters.'
+);
+
+// Variable to store boolean about the use of numeric characters.
+var hasNumericCharacters = confirm(
+    'Click OK to confirm including lowercase characters.'
+);
+
+// Variable to store boolean regarding the inclusion of lowercase characters.
+var hasLowerCasedCharacters = confirm(
+    'Click OK to confirm including lowercase characters.'
+);
+
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
