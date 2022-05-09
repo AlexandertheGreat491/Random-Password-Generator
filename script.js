@@ -59,8 +59,12 @@ var functionArray = {
 
 };
 
-//Checks to make sure user selected ok for all and uses empty minimums from above.
 /*Conditions to validate
 user input & that at least one character type is selected*/
+
+if (numbers === true) {
+    minimumNumbers = functionArray.getNumbers();
+    minimumCount++;
+}
 
 
