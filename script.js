@@ -64,6 +64,18 @@ function getPasswordOptions() {
     var length = parseInt(
         prompt('How many characters would you like your password to contain?')
     );
+
+// Condition to check if the password length is a number.
+if (isNaN(length) === true) {
+   alert('Password length must be provided as a number.');
+   return;
+}
+
+// Condition that checks if password is at least 8 characters in length.
+if (length < 8) {
+    alert('Password length must be at least 8 characters.');
+    return;
+}
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
