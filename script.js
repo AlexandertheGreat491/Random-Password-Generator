@@ -24,4 +24,6 @@ function generatePassword(){
     var passwordLength = prompt("Please enter the number of characters you want for your new password. It must be at least 8 characters and no more than 128 characters.");
     var numbers = confirm("Do you want numbers in your password?");
     var lowerCases = confirm("Do you want lowercases in your password?");
+    var upperCases = confirm("Do you want uppercases in your password?");
+    
 }
