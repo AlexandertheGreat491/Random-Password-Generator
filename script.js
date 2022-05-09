@@ -57,5 +57,10 @@ var functionArray = {
         return specialCharacters(Math.floor(Math.random() * specialCharacters.length));
     },
 
+};
 
-}
+//Checks to make sure user selected ok for all and uses empty minimums from above.
+/*Conditions to validate
+user input & that at least one character type is selected*/
+
+
