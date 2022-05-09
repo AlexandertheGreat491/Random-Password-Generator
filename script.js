@@ -37,3 +37,17 @@ var minimumNumbers = "";
 var minimumLowerCases = "";
 var minimumUpperCases = "";
 var minimumSpecialCharacters = "";
+
+//Generator functions
+//Uses methods to calculate what the variables for empty minimums will return.
+var functionArray = {
+    getNumbers: function() {
+        return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
+    },
+
+    getLowerCases: function() {
+        return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
+    },
+
+    
+}
