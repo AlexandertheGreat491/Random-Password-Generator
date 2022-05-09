@@ -13,7 +13,7 @@ generateButton.addEventListener('click', writePassword)
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
-
+  var numbers = confirm("Do you want numbers in your password?");
   passwordText.value = password;
 
 }
@@ -21,5 +21,5 @@ function writePassword() {
 //Prompts that come up after you click generate password
 function generatePassword(){
     var passwordLength = prompt("Please enter the number of characters you want for your new password. It must be at least 8 characters and no more than 128 characters.");
-    
+
 }
