@@ -49,5 +49,9 @@ var functionArray = {
         return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
     },
 
-    
+    getUpperCases: function() {
+        return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
+    },
+
+
 }
