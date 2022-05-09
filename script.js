@@ -98,9 +98,26 @@ var hasLowerCasedCharacters = confirm(
     'Click OK to confirm including lowercase characters.'
 );
 
+// Variable to store boolean regarding the inclusion of uppercase characters.
+var hasUpperCaseCharacters = confirm(
+    'Click OK to confirm including uppercase characters.'
+);
+
+// Condition to check if the user doesn't include any types of characters.
+if (
+    hasSpecialCharacters === false &&
+    hasNumericCharacters === false &&
+    hasLowerCasedCharacters === false &&
+    hasUpperCasedCharacters === false 
+) {
+    alert('Must select at least one character type.');
+    return;
+}
+// Objects that will store the user input.
+
 }
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
@@ -112,5 +129,5 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener('click', writePassword);
 
