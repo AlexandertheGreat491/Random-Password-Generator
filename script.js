@@ -72,4 +72,8 @@ if (lowerCases === true) {
     minimumCount++;
 }
 
+if (upperCases === true) {
+    minimumUpperCases = functionArray.getUpperCases();
+}
+
 
