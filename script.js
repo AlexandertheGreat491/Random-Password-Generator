@@ -76,4 +76,8 @@ if (upperCases === true) {
     minimumUpperCases = functionArray.getUpperCases();
 }
 
+if (special === true) {
+    minimumSpecialCharacters = functionArray.getSpecialCharacters();
+}
+
 
