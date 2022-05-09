@@ -136,7 +136,7 @@ function generatePassword() {
     var options = getPasswordOptions();
     //Variable stores the password.
     var result = [];
-}
+
 
 // Array to store types of characters to include in password.
 var possibleCharacters = [];
@@ -155,6 +155,26 @@ if (options.hasSpecialCharacters) {
 if (options.hasNumericCharacters) {
     possibleCharacters = possibleCharacters.concat(numericCharacters);
     guaranteedCharacters.push(getRandom(numericCharacters));
+}
+
+// Conditiional state that adds array of lowercase characters into array of possible characters based on user input.
+if (options.hasLowerCasedCharacters) {
+    possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
+    guaranteedCharacters.push(getRandom(lowerCasedCharacters));
+}
+
+// Conditional statement that adds array of uppercase characters into array of possible characters based on user input.
+if (options.hasUpperCasedCharacters) {
+    possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
+    guaranteedCharacters.push(getRandom(upperCasedCharacters));
+}
+
+//Mix in at least one of each guaranteed character in the result.
+for (var i = 0; i < guaranteedCharacters.length; i++) {
+    result[i] =guaranteedCharacters[i];
+}
+//Transform the result into a string and pass into writePassword.
+return result.join('');
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
