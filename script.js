@@ -53,5 +53,9 @@ var functionArray = {
         return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
     },
 
+    getSpecialCharacters: function() {
+        return specialCharacters(Math.floor(Math.random() * specialCharacters.length));
+    },
+
 
 }
