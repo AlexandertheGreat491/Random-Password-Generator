@@ -80,4 +80,10 @@ if (special === true) {
     minimumSpecialCharacters = functionArray.getSpecialCharacters();
 }
 
+/*string variable for empty values for the loop
+that creates the random characters needed to 
+generate passwords*/
+
+var randomPasswordGenerated = "";
+
 
