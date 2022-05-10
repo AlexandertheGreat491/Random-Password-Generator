@@ -1,25 +1,27 @@
 # Random-Password-Generator
+
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+* What was your motivation?
 
-## Table of Contents (Optional)
+   My motivation was to build a password generator that created passwords that meet certain criteria and gives users a password that provides greater security.
+   
+* Why did you build this project?
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+    I built this project to create an application that an employee can use to generate a random password based on criteria they have seleceted.
+    
+* What problem does it solve?
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+    The site allows employees to generate a random password in order to have greater security.
+    
+* What did you learn?
+
+I learned how to apply functions, methods, and concepts of JavaScript to add to starter code and produce an application that meets the needs of users.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To have access to this repository clone this project to your local machine.
 
 ## Usage
 
