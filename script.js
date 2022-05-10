@@ -13,27 +13,32 @@ special characters, upperCaseLetters, lowerCaseLetters,
 & numbers, so that when password is generated pw is the array
 being pulled*/
 function getInput() {
+// parseInt() parses a string argument and returns characters.
     var length = parseInt(prompt("Enter number of characters desired between 8 and 128"),10);
     if ((length >= 8) && (length <= 128)) {
         var characters = confirm("Would you like to include special characters?");
+// Concat pw array with specialCharacters array.
         if (characters == true) {
             pw=pw.concat(specialCharacters);
             minimumSpecialCharacters = functionArray.getRandomspecialCharacters();
             minimumCount++;
         }
         var numbers = confirm("Would you like to include numbers?");
+// Concat pw array wiht numbers array.
       if (numbers == true) {
           pw=pw.concat(numbers);
         minimumNumbers = functionArray.getRandomNumber();
         minimumCount++;
     } 
     var uppercaseletters = confirm("Would you like to include uppercase letters?");
+// Concat pw array with upperCaseLetters array.
     if (uppercaseletters == true) {
         pw=pw.concat(upperCaseLetters);
       minimumUpperCases = functionArray.getRandomUpper();
       minimumCount++;
     } 
     var lowercaseletters = confirm("Would you like to include lowercase letters?");
+// Concat pw array with lowerCaseLetters array.
     if (lowercaseletters == true) {
         pw=pw.concat(lowerCaseLetters);
       minimumLowerCases = functionArray.getRandomLower();
@@ -45,12 +50,14 @@ function getInput() {
      password += pw[randomNumberPicked];
      console.log(password);
 }
+// querySelector used to return the first element that mataches #password.
 var passwordText = document.querySelector("#password");
 passwordText.value = password;
 } else {
     alert("Invalid response. Must be a number between 8 and 128.");
   }
 return password;
+// getInput() ends & return statement specifies that password must be returned.
 }
 
 //Defining empty variables
@@ -68,6 +75,7 @@ function generatePassword() {
     var options = getInput();
   }
   var functionArray = {
+// String.fromCharCode method returns a string.
     getRandomNumber: function() {
       return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
     },
@@ -82,8 +90,8 @@ function generatePassword() {
       return specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
     }
   }
-// Write password to the #password input
 
+// Write password to the #password input.
 function writePassword() {
   var passwordCreteria = getInput();
   //console.log(passwordCreteria);
@@ -97,5 +105,5 @@ var passwordText = document.querySelector("#password");
 
 }
 
-// Add event listener to generate button
+// Event listener for generate button.
 generateBtn.addEventListener("click", writePassword);
