@@ -2,7 +2,7 @@
 var upperCaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var symbols = ["!", "@", "#", "$", "%"];
+var specialCharacters = ["!", "@", "#", "$", "%"];
 var pw = [];
 var password = "";
 // Get references to the #generate element
@@ -12,10 +12,10 @@ var generateBtn = document.querySelector("#generate");
 function getInput() {
     var length = parseInt(prompt("Enter number of characters desired between 8 and 128"),10);
     if ((length >= 8) && (length <= 128)) {
-        var characters = confirm("Would you like to include symbols?");
+        var characters = confirm("Would you like to include special characters?");
         if (characters == true) {
-            pw=pw.concat(symbols);
-            minimumSpecialCharacters = functionArray.getRandomSymbol();
+            pw=pw.concat(specialCharacters);
+            minimumSpecialCharacters = functionArray.getRandomspecialCharacters();
             minimumCount++;
         }
         var numbers = confirm("Would you like to include numbers?");
@@ -74,9 +74,9 @@ function generatePassword() {
     getRandomUpper: function() {
       return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
     },
-    getRandomSymbol: function() {
-      const symbols = '!@#$%^&*(){}[]=<>/,.';
-      return symbols[Math.floor(Math.random() * symbols.length)];
+    getRandomspecialCharacters: function() {
+      const specialCharacters = '!@#$%^&*(){}[]=<>/,.';
+      return specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
     }
   }
 // Write password to the #password input
