@@ -31,6 +31,9 @@ The project can be used through accessing the deployed URL and/or through access
 
 [public repository URL](https://github.com/AlexandertheGreat491/Random-Password-Generator)
 
+![password generator screenshot](https://user-images.githubusercontent.com/64184203/167674818-a0542f3f-fc10-4d35-8214-52a11bdbc19c.jpg)
+
+
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
