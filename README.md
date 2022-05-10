@@ -36,11 +36,21 @@ The project can be used through accessing the deployed URL and/or through access
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+[Alexander Van Dyke](https://github.com/AlexandertheGreat491)
 
-If you followed tutorials, include links to those here as well.
+Tutorials used:
+
+OWASP. 2022. Password Special Characters. https://owasp.org/www-community/password-special-characters
+
+W3Schools. (2022). CSS Tutorial. W3Schools. https://www.w3schools.com/css/default.asp
+
+W3Schools. (2022). HTML Tutorial. W3Schools. https://www.w3schools.com/html/default.asp
+
+W3Schools. (2022). JavaScript Tutorial. W3Schools. https://www.w3schools.com/js/default.asp
+
+Mozilla Foundation Mozilla Developer Network. (2022). JavaScript. https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ## License
 
@@ -48,22 +58,3 @@ The last section of a high-quality README file is the license. This lets other d
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
