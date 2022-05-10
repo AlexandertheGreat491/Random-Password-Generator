@@ -25,13 +25,11 @@ To have access to this repository clone this project to your local machine.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+The project can be used through accessing the deployed URL and/or through accessing the public GitHub repository for this project.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+[Deployed URL](https://alexanderthegreat491.github.io/Random-Password-Generator/)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+[public repository URL](https://github.com/AlexandertheGreat491/Random-Password-Generator)
 
 ## Credits
 
