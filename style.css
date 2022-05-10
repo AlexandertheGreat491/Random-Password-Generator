@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+/*determines the overall styling for
+the html, the body, and the first div
+which has the wrapper class*/
 html,
 body,
 .wrapper {
@@ -16,20 +18,20 @@ body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
-
+/*styling for the first div in the body of the html*/
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
+/*header styling*/
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
-
+/*styling for the second div in html with the card class*/
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -71,7 +73,8 @@ header {
   display: block;
   clear: both;
 }
-
+/*styling for the btn class which applies
+to the Generate Password button*/
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -96,7 +99,7 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+/*styling for <textarea> under the password id*/
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
