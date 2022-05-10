@@ -25,7 +25,7 @@ To have access to this repository clone this project to your local machine.
 
 ## Usage
 
-The project can be used through accessing the deployed URL and/or through accessing the public GitHub repository for this project.
+  The project can be used through accessing the deployed URL and/or through accessing the public GitHub repository for this project.
 
 [Deployed URL](https://alexanderthegreat491.github.io/Random-Password-Generator/)
 
