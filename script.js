@@ -71,7 +71,7 @@ var numbers = [0,
                9];
 
  // Array that defines the characters that can be used for numeric characters.
-               
+
 var specialCharacters = ["!", 
                          "@", 
                          "#", 
@@ -88,26 +88,42 @@ var specialCharacters = ["!",
                          "}", 
                          "~", 
                          "_",];
+
+ /* Var pw will concat to the above arrays
+ causing the random characters in the password
+ to be pulled from pw. */
+
 var pw = [];
 var password = "";
 
 // Get references to the #generate element.
+// Returns the first element that matches #generate element
 
 var generateBtn = document.querySelector("#generate");
 
 // Defining the getInput() and variables.
+
 /* In each condition concat pw with
 special characters, upperCaseLetters, lowerCaseLetters,
 & numbers, so that when password is generated pw is the array
 being pulled*/
 
 function getInput() {
-// parseInt() parses a string argument and returns characters.
+
+// parseInt() decomposes a string argument and returns characters.
+// prompt() used to ask the user to select the number of characters in their password.
+
     var length = parseInt(prompt("Enter number of characters desired between 8 and 128"),10);
+
+/* The condition sets the length of the password to at least
+8 charcters & not more than 128. When true the user begins to choose
+the characters used in their password */
+
     if ((length >= 8) && (length <= 128)) {
         var characters = confirm("Would you like to include special characters?");
 
-// Concat pw array with specialCharacters array.
+/* pw array concat with the specialCharacters array to enable
+the user to pull random special characters from the same array.*/
 
         if (characters == true) {
             pw=pw.concat(specialCharacters);
@@ -116,7 +132,8 @@ function getInput() {
         }
         var numbers = confirm("Would you like to include numbers?");
 
-// Concat pw array wiht numbers array.
+/* pw array concat with the numbers array to allow the password generator to pull
+ random numerical characters from the same array*/
 
       if (numbers == true) {
           pw=pw.concat(numbers);
@@ -125,7 +142,8 @@ function getInput() {
     } 
     var uppercaseletters = confirm("Would you like to include uppercase letters?");
 
-// Concat pw array with upperCaseLetters array.
+/* pw array concat with the upperCaseLetters array to allow the password generator to pull random uppercase letter
+characters from the same array*/
 
     if (uppercaseletters == true) {
         pw=pw.concat(upperCaseLetters);
@@ -134,7 +152,8 @@ function getInput() {
     } 
     var lowercaseletters = confirm("Would you like to include lowercase letters?");
 
-// Concat pw array with lowerCaseLetters array.
+/* pw array concat with the lowerCaseLetters array to allow the password generator
+to pull from the same array */
 
     if (lowercaseletters == true) {
         pw=pw.concat(lowerCaseLetters);
