@@ -1,5 +1,5 @@
 // Arrays to define the characters used to generate passwords.
-// The characters that can be used for upper case letters.
+// Array that defines characters that can be used for upper case letters.
 
 var upperCaseLetters = ["A", 
                         "B", 
@@ -28,7 +28,7 @@ var upperCaseLetters = ["A",
                         "Y", 
                         "Z",];
 
-//The characters that can be used for lower case characters.
+// Array that defines the characters that can be used for lower case characters.
 
 var lowerCaseLetters = ["a", 
                         "b", 
@@ -56,7 +56,9 @@ var lowerCaseLetters = ["a",
                         "x", 
                         "y", 
                         "z"];
-// The characters that can be used for numeric characters.
+
+// Array that defines the characters that can be used for numeric characters.
+
 var numbers = [0, 
                1, 
                2, 
@@ -68,6 +70,7 @@ var numbers = [0,
                8, 
                9];
 
+ // Array that defines the characters that can be used for numeric characters.              
 var specialCharacters = ["!", 
                          "@", 
                          "#", 
