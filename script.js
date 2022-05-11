@@ -110,23 +110,18 @@ var randomize = function() {
   return;
 }
 
+//Function that generates password
 
-  var utility = {
-// String.fromCharCode method returns a string.
-    getRandomNumber: function() {
-      return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
-    },
-    getRandomLower: function() {
-      return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
-    },
-    getRandomUpper: function() {
-      return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
-    },
-    getRandomspecialCharacters: function() {
-      const specialCharacters = '!@#$%^&*(){}[]=<>/,.';
-      return specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
-    }
-  }
+var generatePassword = function() {
+  //prompt and ask for password inputs
+  setPasswordCharacters();
+  // randomize characters in answers to prompts
+  randomize();
+  // password displayed in an alert
+  window.alert("Your new password is " + password);
+};
+
+  
 
 // Write password to the #password input.
 
