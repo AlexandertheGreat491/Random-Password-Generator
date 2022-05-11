@@ -70,6 +70,29 @@ while (numbers === undefined) {
   }
 }
 
+//while statement that says what to do depending on how the user responds to the prompt
+
+while (special === undefined) {
+  var promptSpecial = window.prompt("Would you like your password to include special characters? Enter 'YES' or 'NO'");
+  switch (promptSpecial.toLowerCase()) {
+    case "yes":
+      special = characters.special
+      break;
+    case "no":
+      special = ""
+      break;
+    default:
+      window.alert("Please provide a valid answer. Please try again.");
+      break;
+  }
+}
+
+// password characters are set based on prompt responses
+
+password = alphabet + numbers + special;
+return;
+
+};
 
 
 
