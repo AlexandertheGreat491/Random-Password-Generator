@@ -1,4 +1,8 @@
 // Arrays to define the characters used to generate passwords.
+
+
+var password = "";
+
 // The characters that can be used for upper case letters.
 
 var upperCaseLetters = ["A", 
@@ -57,6 +61,7 @@ var lowerCaseLetters = ["a",
                         "y", 
                         "z"];
 // The characters that can be used for numeric characters.
+
 var numbers = [0, 
                1, 
                2, 
@@ -84,7 +89,7 @@ var specialCharacters = ["!",
                          "}", 
                          "~", 
                          "_",];
-var pw = [];
+
 var password = "";
 
 // Get references to the #generate element.
@@ -99,9 +104,11 @@ being pulled*/
 
 function getInput() {
 // parseInt() parses a string argument and returns characters.
-    var length = parseInt(prompt("Enter number of characters desired between 8 and 128"),10);
-    if ((length >= 8) && (length <= 128)) {
-        var characters = confirm("Would you like to include special characters?");
+    var setPasswordLength = function(){
+var passwordLength = Math.floor(Math.random() * 128) + 8;
+    }
+     
+    var characters = confirm("Would you like to include special characters?");
 
 // Concat pw array with specialCharacters array.
 
@@ -147,7 +154,7 @@ function getInput() {
 
 var passwordText = document.querySelector("#password");
 passwordText.value = password;
-} else {
+} else  {
     alert("Invalid response. Must be a number between 8 and 128.");
   }
 
