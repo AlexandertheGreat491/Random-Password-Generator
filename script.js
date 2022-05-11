@@ -179,9 +179,10 @@ return password;
 // Return ends the getInput() specifies that the password value must be returned.
 }
 
-//Defining empty variables.
+// Defining the minimum number characters that must be used in a password.
+// This creates the requirement tha at least one character type is selected.
 
-var minimumCount = 0;
+var minimumCount = 1;
 var minimumNumbers = "";
 var minimumLowerCases = "";
 var minimumUpperCases = "";
