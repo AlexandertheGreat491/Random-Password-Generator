@@ -22,46 +22,41 @@ specialCharacters = ["!", "#", "$", "%", "&", "=", ">", "<", "?", "[", "]", "{",
 
 var generateBtn = document.querySelector("#generate");
 
-// Defining the getInput() and variables.
+
 /* In each condition concat pw with
 special characters, upperCaseLetters, lowerCaseLetters,
 & numbers, so that when password is generated pw is the array
 being pulled*/
 
-function getInput() {
-// parseInt() parses a string argument and returns characters.
+// Function designed to generate random number between 8 128
+var setPasswordLength = function() {
     var setPasswordLength = function(){
 var passwordLength = Math.floor(Math.random() * 128) + 8;
-    }
+return passwordLength;
+    };
      
-    var characters = confirm("Would you like to include special characters?");
+   // Function sets password characters. 
 
-// Concat pw array with specialCharacters array.
+var setPasswordCharacters = function(){
+  // user responds to prompt & character type is validated
+  var alphabet, numbers, special;
+  while (alphabet === undefined) {
+    var promptCase = window.prompt("Would you like like your password to include upper case letters? Enter 'YES' or 'NO'");
+  switch (promptCase.toLowerCase()) {
+    case "yes":
+      alphabet = characters.lowercase + characters.uppercase;
+      break;
+    case "no":
+        alphabet = characters.lowercase;
+        break;
+    default:
+      window.alert("Please provide a valid answer. Please try again.");
+      break;
+  }
+  }
 
-        if (characters == true) {
-            pw=pw.concat(specialCharacters);
-            minimumSpecialCharacters = utility.getRandomspecialCharacters();
-            minimumCount++;
-        }
-        var numbers = confirm("Would you like to include numbers?");
 
-// Concat pw array wiht numbers array.
 
-      if (numbers == true) {
-          pw=pw.concat(numbers);
-        minimumNumbers = utility.getRandomNumber();
-        minimumCount++;
-    } 
-    var uppercaseletters = confirm("Would you like to include uppercase letters?");
-
-// Concat pw array with upperCaseLetters array.
-
-    if (uppercaseletters == true) {
-        pw=pw.concat(upperCaseLetters);
-      minimumUpperCases = utility.getRandomUpper();
-      minimumCount++;
-    } 
-    var lowercaseletters = confirm("Would you like to include lowercase letters?");
 
 // Concat pw array with lowerCaseLetters array.
 
