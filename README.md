@@ -42,6 +42,8 @@ Collaborators:
 
 Tutorials used:
 
+GeeksforGeeks. (2021, September 30). How to write a Pseudo Code? GeeksforGeeks. Retrieved May 11, 2022, from https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/
+
 OWASP. 2022. Password Special Characters. https://owasp.org/www-community/password-special-characters
 
 W3Schools. (2022). CSS Tutorial. W3Schools. https://www.w3schools.com/css/default.asp
