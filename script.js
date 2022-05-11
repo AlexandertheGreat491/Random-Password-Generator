@@ -119,6 +119,8 @@ function getInput() {
 8 charcters & not more than 128. When true the user begins to choose
 the characters used in their password */
 
+//The user starts by choosing whether or not they want special characters.
+
     if ((length >= 8) && (length <= 128)) {
         var characters = confirm("Would you like to include special characters?");
 
