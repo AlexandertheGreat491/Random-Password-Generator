@@ -96,7 +96,7 @@ var specialCharacters = ["!",
 
  /* Var pw will concat to the above arrays
  causing the random characters in the password
- to be pulled from pw. */
+ to be pulled from pw, when the password is generated. */
 
 var pw = [];
 var password = "";
