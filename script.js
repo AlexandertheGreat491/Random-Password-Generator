@@ -54,7 +54,7 @@ var setPasswordCharacters = function(){
       break;
   }
   }
-
+// while statement says what to do depending on how the user responds to the prompt
 while (numbers === undefined) {
   var promptNumeric = window.prompt("Would you like your password to use numbers? Enter 'YES' or 'NO'");
   switch (promptNumeric.toLowerCase()) {
