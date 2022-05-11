@@ -135,7 +135,7 @@ the user to pull random special characters from the same array.*/
         if (characters == true) {
             pw=pw.concat(specialCharacters);
             minimumSpecialCharacters = utility.getRandomspecialCharacters();
-            minimumCount++;
+            minimumCharacter++;
         }
         var numbers = confirm("Would you like to include numbers?");
 
@@ -145,7 +145,7 @@ the user to pull random special characters from the same array.*/
       if (numbers == true) {
           pw=pw.concat(numbers);
         minimumNumbers = utility.getRandomNumber();
-        minimumCount++;
+        minimumCharacter++;
     } 
     var uppercaseletters = confirm("Would you like to include uppercase letters?");
 
@@ -155,7 +155,7 @@ characters from the same array*/
     if (uppercaseletters == true) {
         pw=pw.concat(upperCaseLetters);
       minimumUpperCases = utility.getRandomUpper();
-      minimumCount++;
+      minimumCharacter++;
     } 
     var lowercaseletters = confirm("Would you like to include lowercase letters?");
 
@@ -165,7 +165,7 @@ to pull from the same array */
     if (lowercaseletters == true) {
         pw=pw.concat(lowerCaseLetters);
       minimumLowerCases = utility.getRandomLower();
-      minimumCount++;
+      minimumCharacter++;
     }
     for (let i = 0; i < length ; i++) {
       var randomNumberPicked = Math.floor(Math.random() * pw.length);
@@ -189,7 +189,7 @@ return password;
 // Defining the minimum number characters that must be used in a password.
 // This creates the requirement tha at least one character type is selected.
 
-var minimumCount = 1;
+var minimumCharacter = 1;
 var minimumNumbers = "";
 var minimumLowerCases = "";
 var minimumUpperCases = "";
