@@ -70,7 +70,8 @@ var numbers = [0,
                8, 
                9];
 
- // Array that defines the characters that can be used for numeric characters.              
+ // Array that defines the characters that can be used for numeric characters.
+               
 var specialCharacters = ["!", 
                          "@", 
                          "#", 
