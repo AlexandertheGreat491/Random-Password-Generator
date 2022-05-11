@@ -176,7 +176,7 @@ passwordText.value = password;
 
 return password;
 
-// getInput() ends & return statement specifies that password must be returned.
+// Return ends the getInput() specifies that the password value must be returned.
 }
 
 //Defining empty variables.
