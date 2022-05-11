@@ -1,4 +1,9 @@
+/*The application will allow users with access to sensitive data
+to randomly generate a password that meets certain criteria
+and creates a strong password that provides greater security*/
+
 // Arrays to define the characters used to generate passwords.
+
 // Array that defines characters that can be used for upper case letters.
 
 var upperCaseLetters = ["A", 
