@@ -5,17 +5,17 @@ var password = "";
 
 // The characters that can be used for upper case letters.
 var characters = {
-upperCaseLetters = ["A", "B", "C", "D", "E","F", "G", "H", "I", "J", "K","L","M", "N","O", "P", "Q", "R", "S","T", "U", "V", "W",  "X", "Y", "Z"],    
+upperCaseLetters : ["A", "B", "C", "D", "E","F", "G", "H", "I", "J", "K","L","M", "N","O", "P", "Q", "R", "S","T", "U", "V", "W",  "X", "Y", "Z"],    
                          
 //The characters that can be used for lower case characters.
 
-lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",], 
+lowerCaseLetters : ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",], 
                                            
 // The characters that can be used for numeric characters.
 
-numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+numbers : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 
-specialCharacters = ["!", "#", "$", "%", "&", "=", ">", "<", "?", "[", "]", "{", "}", "~" , "_"]   
+specialCharacters : ["!", "#", "$", "%", "&", "=", ">", "<", "?", "[", "]", "{", "}", "~" , "_"]   
                         
 };
 // Get references to the #generate element.
@@ -38,9 +38,10 @@ return passwordLength;
 
 var setPasswordCharacters = function(){
   // user responds to prompt & character type is validated
+  window.prompt("Please enter the number of characters desired in your password. Your password must be at least 8 characters and not more than 128.");
   var alphabet, numbers, special;
   while (alphabet === undefined) {
-    var promptCase = window.prompt("Would you like like your password to include upper case letters? Enter 'YES' or 'NO'");
+    var promptCase = window.prompt("Would you like like your password to include upper case letters? Enter 'YES' or 'NO.'");
   switch (promptCase.toLowerCase()) {
     case "yes":
       alphabet = characters.lowercase + characters.uppercase;
@@ -55,7 +56,7 @@ var setPasswordCharacters = function(){
   }
 // while statement says what to do depending on how the user responds to the prompt
 while (numbers === undefined) {
-  var promptNumeric = window.prompt("Would you like your password to use numbers? Enter 'YES' or 'NO'");
+  var promptNumeric = window.prompt("Would you like your password to use numbers? Enter 'YES' or 'NO.'");
   switch (promptNumeric.toLowerCase()) {
     case "yes":
       numbers = characters.numeric
@@ -72,7 +73,7 @@ while (numbers === undefined) {
 //while statement that says what to do depending on how the user responds to the prompt
 
 while (special === undefined) {
-  var promptSpecial = window.prompt("Would you like your password to include special characters? Enter 'YES' or 'NO'");
+  var promptSpecial = window.prompt("Would you like your password to include special characters? Enter 'YES' or 'NO.'");
   switch (promptSpecial.toLowerCase()) {
     case "yes":
       special = characters.special
@@ -121,23 +122,19 @@ var generatePassword = function() {
   window.alert("Your new password is " + password);
 };
 
-  
+// Get references to the #generate id
+
+var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input.
 
 function writePassword() {
-  var passwordCreteria = getInput();
-  //console.log(passwordCreteria);
-  //var passwordText = document.querySelector(passwordCreteria);
-//console.log(password);
-var passwordText = document.querySelector("#password");
+  generatePassword();
+  var passwordText = document.querySelector("#password");
 
-//Math.random();
-
-  passwordText.value = passwordCreteria;
+  passwordText.value = password;
 
 }
 
-// Event listener for generate button.
-
+// Event listener for the generate button
 generateBtn.addEventListener("click", writePassword);
