@@ -4,94 +4,20 @@
 var password = "";
 
 // The characters that can be used for upper case letters.
-
-var upperCaseLetters = ["A", 
-                        "B", 
-                        "C", 
-                        "D", 
-                        "E", 
-                        "F", 
-                        "G", 
-                        "H", 
-                        "I", 
-                        "J", 
-                        "K", 
-                        "L", 
-                        "M", 
-                        "N", 
-                        "O", 
-                        "P", 
-                        "Q", 
-                        "R", 
-                        "S", 
-                        "T", 
-                        "U", 
-                        "V", 
-                        "W", 
-                        "X", 
-                        "Y", 
-                        "Z",];
-
+var characters = {
+upperCaseLetters = ["A", "B", "C", "D", "E","F", "G", "H", "I", "J", "K","L","M", "N","O", "P", "Q", "R", "S","T", "U", "V", "W",  "X", "Y", "Z"],    
+                         
 //The characters that can be used for lower case characters.
 
-var lowerCaseLetters = ["a", 
-                        "b", 
-                        "c", 
-                        "d", 
-                        "e", 
-                        "f", 
-                        "g", 
-                        "h", 
-                        "i", 
-                        "j", 
-                        "k", 
-                        "l", 
-                        "m", 
-                        "n", 
-                        "o", 
-                        "p", 
-                        "q", 
-                        "r", 
-                        "s", 
-                        "t", 
-                        "u", 
-                        "v", 
-                        "w", 
-                        "x", 
-                        "y", 
-                        "z"];
+lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",], 
+                                           
 // The characters that can be used for numeric characters.
 
-var numbers = [0, 
-               1, 
-               2, 
-               3, 
-               4, 
-               5, 
-               6, 
-               7, 
-               8, 
-               9];
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 
-var specialCharacters = ["!", 
-                         "@", 
-                         "#", 
-                         "$", 
-                         "%", 
-                         "&", 
-                         "=", 
-                         ">", 
-                         "<", 
-                         "?", 
-                         "[", 
-                         "]", 
-                         "{", 
-                         "}", 
-                         "~", 
-                         "_",];
-
-var password = "";
-
+specialCharacters = ["!", "#", "$", "%", "&", "=", ">", "<", "?", "[", "]", "{", "}", "~" , "_"]   
+                        
+};
 // Get references to the #generate element.
 
 var generateBtn = document.querySelector("#generate");
