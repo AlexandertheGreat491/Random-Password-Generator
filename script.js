@@ -103,7 +103,7 @@ function getInput() {
 
         if (characters == true) {
             pw=pw.concat(specialCharacters);
-            minimumSpecialCharacters = functionArray.getRandomspecialCharacters();
+            minimumSpecialCharacters = utility.getRandomspecialCharacters();
             minimumCount++;
         }
         var numbers = confirm("Would you like to include numbers?");
@@ -112,7 +112,7 @@ function getInput() {
 
       if (numbers == true) {
           pw=pw.concat(numbers);
-        minimumNumbers = functionArray.getRandomNumber();
+        minimumNumbers = utility.getRandomNumber();
         minimumCount++;
     } 
     var uppercaseletters = confirm("Would you like to include uppercase letters?");
@@ -121,7 +121,7 @@ function getInput() {
 
     if (uppercaseletters == true) {
         pw=pw.concat(upperCaseLetters);
-      minimumUpperCases = functionArray.getRandomUpper();
+      minimumUpperCases = utility.getRandomUpper();
       minimumCount++;
     } 
     var lowercaseletters = confirm("Would you like to include lowercase letters?");
@@ -130,7 +130,7 @@ function getInput() {
 
     if (lowercaseletters == true) {
         pw=pw.concat(lowerCaseLetters);
-      minimumLowerCases = functionArray.getRandomLower();
+      minimumLowerCases = utility.getRandomLower();
       minimumCount++;
     }
     for (let i = 0; i < length ; i++) {
@@ -170,7 +170,7 @@ function generatePassword() {
     var options = getInput();
   }
 
-  var functionArray = {
+  var utility = {
 // String.fromCharCode method returns a string.
     getRandomNumber: function() {
       return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
