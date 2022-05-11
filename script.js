@@ -25,7 +25,7 @@ var upperCaseLetters = ["A",
                         "X", 
                         "Y", 
                         "Z",];
-                        
+
 var lowerCaseLetters = ["a", 
                         "b", 
                         "c", 
@@ -146,7 +146,9 @@ passwordText.value = password;
 } else {
     alert("Invalid response. Must be a number between 8 and 128.");
   }
+
 return password;
+
 // getInput() ends & return statement specifies that password must be returned.
 }
 
