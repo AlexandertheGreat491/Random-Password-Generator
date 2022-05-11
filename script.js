@@ -30,7 +30,6 @@ being pulled*/
 
 // Function designed to generate random number between 8 128
 var setPasswordLength = function() {
-    var setPasswordLength = function(){
 var passwordLength = Math.floor(Math.random() * 128) + 8;
 return passwordLength;
     };
@@ -96,36 +95,21 @@ return;
 
 
 
-// querySelector used to return the first element that mataches #password.
+// Function to randomize password characters
 
-var passwordText = document.querySelector("#password");
-passwordText.value = password;
-} else  {
-    alert("Invalid response. Must be a number between 8 and 128.");
-  }
-
-return password;
-
-// getInput() ends & return statement specifies that password must be returned.
+var randomize = function() {
+  var passwordArray = [];
+  // password converts to array
+  var passwordArray = password.split("");
+  // array items are randomly sorted
+  passwordArray.sort(a => Math.random() -0.5);
+  // password is set using setPasswordLength()
+  passwordArray.length = setPasswordLength()
+  //passwordArray is converted back to a string
+  password = passwordArray.join("");
+  return;
 }
 
-//Defining empty variables.
-
-var minimumCount = 0;
-var minimumNumbers = "";
-var minimumLowerCases = "";
-var minimumUpperCases = "";
-var minimumSpecialCharacters = "";
-password += minimumNumbers;
-password += minimumLowerCases;
-password += minimumUpperCases;
-password += minimumSpecialCharacters;
-
-// Function that defines the inputs from generatePassword().
-
-function generatePassword() {
-    var options = getInput();
-  }
 
   var utility = {
 // String.fromCharCode method returns a string.
