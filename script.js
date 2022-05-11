@@ -25,6 +25,7 @@ var upperCaseLetters = ["A",
                         "X", 
                         "Y", 
                         "Z",];
+                        
 var lowerCaseLetters = ["a", 
                         "b", 
                         "c", 
@@ -51,6 +52,7 @@ var lowerCaseLetters = ["a",
                         "x", 
                         "y", 
                         "z"];
+
 var numbers = [0, 
                1, 
                2, 
@@ -61,6 +63,7 @@ var numbers = [0,
                7, 
                8, 
                9];
+
 var specialCharacters = ["!", 
                          "@", 
                          "#", 
