@@ -52,6 +52,8 @@ W3Schools. (2022). JavaScript Tutorial. W3Schools. https://www.w3schools.com/js/
 
 Mozilla Foundation Mozilla Developer Network. (2022). JavaScript. https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+YouTube &amp; The Net Ninja. (n.d.). JavaScriipt Tutorial For Beginners. Retrieved May 11, 2022, from https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET. 
+
 ## License
 
 GNU GENERAL PUBLIC LICENSE
