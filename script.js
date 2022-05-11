@@ -214,7 +214,7 @@ function generatePassword() {
     }
   }
 
-// Write password to the #password input.
+// Write password to the #password.
 
 function writePassword() {
   var passwordCreteria = getInput();
@@ -229,6 +229,7 @@ var passwordText = document.querySelector("#password");
 
 }
 
-// Event listener for generate button.
+/* Event listener for generate button that affects
+how the "Generate" button functions when the user clicks on the button.*/
 
 generateBtn.addEventListener("click", writePassword);
