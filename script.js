@@ -51,7 +51,16 @@ var lowerCaseLetters = ["a",
                         "x", 
                         "y", 
                         "z"];
-var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var numbers = [0, 
+               1, 
+               2, 
+               3, 
+               4, 
+               5, 
+               6, 
+               7, 
+               8, 
+               9];
 var specialCharacters = ["!", "@", "#", "$", "%", "&", "=", ">", "<", "?", "[", "]", "{", "}", "~", "_",];
 var pw = [];
 var password = "";
