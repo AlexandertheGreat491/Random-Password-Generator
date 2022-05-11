@@ -55,21 +55,23 @@ var setPasswordCharacters = function(){
   }
   }
 
-
-
-
-// Concat pw array with lowerCaseLetters array.
-
-    if (lowercaseletters == true) {
-        pw=pw.concat(lowerCaseLetters);
-      minimumLowerCases = utility.getRandomLower();
-      minimumCount++;
-    }
-    for (let i = 0; i < length ; i++) {
-      var randomNumberPicked = Math.floor(Math.random() * pw.length);
-     password += pw[randomNumberPicked];
-     console.log(password);
+while (numbers === undefined) {
+  var promptNumeric = window.prompt("Would you like your password to use numbers? Enter 'YES' or 'NO'");
+  switch (promptNumeric.toLowerCase()) {
+    case "yes":
+      numbers = characters.numeric
+      break;
+    case "no":
+        numbers = ""
+        break;
+    default:
+          window.alert("Please provide a valid answer. Please try again.");
+          break;
+  }
 }
+
+
+
 
 // querySelector used to return the first element that mataches #password.
 
