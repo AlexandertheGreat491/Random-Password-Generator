@@ -240,7 +240,7 @@ var passwordText = document.querySelector("#password");
 
 }
 
-/* Event listener for generate button that affects
+/* Event listener for generateBtn that affects
 how the "Generate" button functions when the user clicks on the button.*/
 
 generateBtn.addEventListener("click", writePassword);
