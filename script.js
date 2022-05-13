@@ -118,7 +118,7 @@ function getInput() {
 // parseInt() decomposes a string argument and returns characters.
 // prompt() used to ask the user to select the number of characters in their password.
 
-    var length = parseInt(prompt("Enter number of characters desired between 8 and 128"),10);
+    var length = parseInt(prompt("Please enter a number of characters of at least 8, but not more than 128."),10);
 
 /* The condition sets the length of the password to at least
 8 charcters & not more than 128. When true the user begins to choose
@@ -178,8 +178,10 @@ to pull from the same array */
 var passwordText = document.querySelector("#password");
 passwordText.value = password;
 } else {
-    alert("Invalid response. Must be a number between 8 and 128.");
+    alert("Please try again. The number of characters desired must be between 8 and 128.");
   }
+
+// This alert will display if the user inputs a number less than 8 or more than 128.
 
 return password;
 
