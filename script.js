@@ -189,6 +189,7 @@ return password;
 }
 
 // Defining the minimum number characters that must be used in a password.
+
 // This creates the requirement tha at least one character type is selected.
 
 var minimumCharacter = 1;
