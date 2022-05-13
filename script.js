@@ -228,15 +228,15 @@ function generatePassword() {
 // Write password to the #password.
 
 function writePassword() {
-  var passwordCreteria = getInput();
-  //console.log(passwordCreteria);
-  //var passwordText = document.querySelector(passwordCreteria);
+  var passwordCriteria = getInput();
+  //console.log(passwordCriteria);
+  //var passwordText = document.querySelector(passwordCriteria);
 //console.log(password);
 var passwordText = document.querySelector("#password");
 
 //Math.random();
 
-  passwordText.value = passwordCreteria;
+  passwordText.value = passwordCriteria;
 
 }
 
