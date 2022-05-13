@@ -21,7 +21,7 @@ I learned how to apply functions, methods, and concepts of JavaScript to add to 
 
 ## Installation
 
-To have access to this repository clone this project to your local machine.
+To have access to this repository, please clone this project to your local machine.
 
 ## Usage
 
